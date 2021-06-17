@@ -31,3 +31,13 @@ form button{
     border: none;
     background: white;
 }
+form button{
+    color:rgb(14, 14, 27);
+    background: rgb(233, 231, 227);
+    cursor:pointer;/*mouse hand icon */
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background:rgb(14, 14, 27);
+    color:rgb(233, 231, 227); 
+}
