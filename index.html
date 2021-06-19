@@ -8,17 +8,25 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
-    <title>Todo List Summer 2021</title>
+    <title>To-do List</title>
 </head>
 <body>
     <header>
-        <h1>Summer 2021 Todo List</h1>
+        <h1>Summer 2021 To-do List</h1>
     </header>
     <form>
         <input type="text" class="todo-input">
         <button class="todo-button" type="submit">
             <i class="fas fa-plus-square"></i>
         </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option><!-- app.js look at function filterTodo E.TARGET.VALUE-->
+                <option value="done">Done</option>
+                <option value="to-do">To-do</option>
+                <option value="in-progress">In-Progress</option>
+            </select>
+        </div>
     </form>
     <div class="todo-container">
         <ul class="todo-list">
